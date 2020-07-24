@@ -3,10 +3,13 @@ package cursoonline;
 
 import CursoDao.CursoDAO;
 import CursoDao.CursoDAOimpl;
+import CursoDao.Cursos_EstudianteDAOImpl;
 import CursoDao.EstudiantesDAOImpl;
+import CursoDao.curso_estudianteDAO;
 import CursoDao.estudianteDAO;
 
 import entidades.Cursos;
+import entidades.Cursos_Estudiante;
 import entidades.Estudiante;
 
 import java.sql.Connection;
@@ -23,16 +26,30 @@ public class CursoOnline {
 
     public static void main(String[] args) 
     {
+            curso_estudianteDAO estudianteDAO = new Cursos_EstudianteDAOImpl();
+            Cursos_Estudiante estudiante = new Cursos_Estudiante(0,1,2);
+            System.out.println("listo");
+          
+//          CursoDAO cursoDAO = new CursoDAOimpl();
+//          List<Estudiante> estudiante1=cursoDAO.getEstudiantePorCurso(1);
+//          System.out.println(estudiante1);
+//        estudianteDAO estudianteDAO = new EstudiantesDAOImpl();
+//        List<Cursos>curso1=estudianteDAO.getCursosPorEstudiante(1);
+//        List<Cursos>curso2=estudianteDAO.getCursosPorEstudiante(2);
+//        System.out.println(curso1);
+//        System.out.println(curso2);
+        
+        
         //CursoDAO cursoDAO = new CursoDAOimpl();
-      estudianteDAO estudianteDAO = new EstudiantesDAOImpl();
-      //Estudiante estudiantes = new Estudiante(0, "gabriel","jara","gabriel@gmail.com");
-      
-     // estudianteDAO.ingresar(estudiantes);
-     //   estudianteDAO.eliminar(3);
-        Estudiante estudiantes = new Estudiante(4,"jose","perez","joseperez@gmail.com");
-        estudianteDAO.actualizar(estudiantes);
-        List <Estudiante> estudiante= estudianteDAO.getestudiante();
-        System.out.println(estudiante);
+//      estudianteDAO estudianteDAO = new EstudiantesDAOImpl();
+//      //Estudiante estudiantes = new Estudiante(0, "gabriel","jara","gabriel@gmail.com");
+//      
+//     // estudianteDAO.ingresar(estudiantes);
+//     //   estudianteDAO.eliminar(3);
+//        Estudiante estudiantes = new Estudiante(4,"jose","perez","joseperez@gmail.com");
+//        estudianteDAO.actualizar(estudiantes);
+//        List <Estudiante> estudiante= estudianteDAO.getestudiante();
+//        System.out.println(estudiante);
         
 
       
